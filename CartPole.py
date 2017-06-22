@@ -286,7 +286,7 @@ class CartPole():
         return (self.cart.body.position[0] - self.cart_min_position) * \
                 1000.0 / self.max_length
     def set_velocity(self, velocity):
-        self.cart_velocity_target = velocity * 1000.0 / self.max_length;
+        self.cart_velocity_target = velocity * 1000.0 / self.max_length
     def run(self):
         while self.running:
             self.step(1.0/60.0)
