@@ -13,7 +13,7 @@ while cp.running:
         c = -1
     v = v + c
     cp.set_velocity(v)
-    print 'v =',v
-    print 'angle =',cp.get_angle()
-    print 'angular_velocity =',cp.get_angular_velocity()
+    print ('v =',v)
+    print ('angle =',cp.get_angle())
+    print ('angular_velocity =',cp.get_angular_velocity())
 
