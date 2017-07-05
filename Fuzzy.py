@@ -1,6 +1,6 @@
 
 
-class Fuzzifier():
+class Fuzzy():
 
     def __init__(self, a, b):
         self.a = a
@@ -13,7 +13,7 @@ class Fuzzifier():
         self.pl = None
 
 
-    def combineFuzzy(self, obj):
+    def inference(self, obj):
 
         NH =  max(min(self.nh, obj.z), min(self.z, obj.nh))
 
@@ -28,7 +28,7 @@ class Fuzzifier():
         return (NH, NL, Z, PL, PH)
 
 
-    def calculateFuzzy(self, v):
+    def fuzzifier(self, v):
         # Return 5 values: NH, NL, Z, PL, PH
 
         if v <= -self.b:
